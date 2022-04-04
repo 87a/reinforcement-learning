@@ -201,14 +201,17 @@ $$
 $$
 \begin{aligned}
 &q_*(high,wait)=r_{wait}+\gamma \underset{a}{\max}q_*(high,a)\\
-&q_*(high,search)=r_{wait}+\alpha\gamma \underset{a}{\max}q_*(high,a)+(1-\alpha)\gamma\underset{a}{\max}q_*(low,a)\\
+&q_*(high,search)=r_{search}+\alpha\gamma \underset{a}{\max}q_*(high,a)+(1-\alpha)\gamma\underset{a}{\max}q_*(low,a)\\
 &q_*(low,search) = (1-\beta)(-3+\gamma\underset{a}{\max}q_*(high,a))+\beta (r_{Search}+\gamma\underset{a}{\max}q_*(low,a))\\
 &q_*(low,wait) = r_{wait}+\gamma\underset{a}{\max}q_*(low,a)\\
 &q_*(low,recharge) = \gamma\underset{a}{\max}q_*(high,a)
 \end{aligned}
 $$
-ex 3.24
+ex 3.24 
+
+
 $$
+A\rightarrow A'\rightarrow A\rightarrow A'\cdots\\
 v_*(A)=10\gamma^0+0\gamma^1+0\gamma^2+0\gamma^3+0\gamma^4+\cdots=10\times(\gamma^0+\gamma^5+\gamma^{10}+\cdots)=10\frac{1}{1-\gamma^5}=24.419
 $$
 
